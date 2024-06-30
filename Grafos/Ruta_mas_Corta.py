@@ -43,10 +43,10 @@ class Grafo:
 
         return ruta, distancias[destino]
 
-# Ejemplo de uso
+# caso de uso 
 grafo = Grafo()
 
-# Agregamos las aristas (rutas aéreas) con sus costos
+# Agregamos las aristas (rutas aereas) con sus costos
 grafo.agregar_arista('Ciudad A', 'Ciudad B', 5000)
 grafo.agregar_arista('Ciudad B', 'Ciudad C', 1500)
 grafo.agregar_arista('Ciudad A', 'Ciudad C', 2300)
@@ -55,7 +55,7 @@ grafo.agregar_arista('Ciudad C', 'Ciudad D', 1150)
 grafo.agregar_arista('Ciudad C', 'Ciudad E', 3800)
 grafo.agregar_arista('Ciudad D', 'Ciudad E', 1900)
 
-# Calculamos la ruta más corta de la Ciudad A a la Ciudad E
+# Calculamos la ruta mas corta de la Ciudad b a la Ciudad d
 origen = 'Ciudad B'
 destino = 'Ciudad D'
 ruta, costo = grafo.ruta_mas_corta(origen, destino)
